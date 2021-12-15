@@ -18,7 +18,7 @@ fun main(){
     val size = mutableListOf<Int>()
     for (i in 0 until 6) {
         val array = createArray(counter)
-        secondsSingle.add(measureTimeMillis { singleMergeSort(array) })
+        secondsSingle.add(measureTimeMillis { mergeSort(array) })
         secondsThread2.add(measureTimeMillis { threadMergeSort(array, 2) })
         secondsThread4.add(measureTimeMillis { threadMergeSort(array, 4) })
         secondsThread8.add(measureTimeMillis { threadMergeSort(array, 8) })
